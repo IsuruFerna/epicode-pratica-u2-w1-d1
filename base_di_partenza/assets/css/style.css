@@ -219,11 +219,6 @@ article > p:nth-of-type(1)::after {
 
 /* mobile */
 @media screen and (min-width: 576px) {
-   body {
-      background-image: none;
-      background: red;
-   }
-
    header div img {
       height: 80px;
    }
@@ -274,17 +269,140 @@ article > p:nth-of-type(1)::after {
 
 /* medium */
 @media screen and (min-width: 768px) {
-   body {
-      background-image: none;
-      background: blue;
-      font-style: italic;
+   header div img {
+      height: 60px;
+   }
+
+   nav ul li {
+      font-size: 1.3em;
+      padding: 0 0.5em 0.2em;
+   }
+
+   header div p {
+      font-size: 1.4em;
+      margin-bottom: 1.2em;
+   }
+
+   article {
+      padding: 1em;
+   }
+   table caption {
+      font-size: 1.3em;
+   }
+
+   table {
+      margin: 6em auto 8em;
+   }
+
+   section form input {
+      width: 70%;
+      height: 3em;
+   }
+
+   section form button {
+      padding: 0.9em 2em;
    }
 }
 /* desktop */
 @media screen and (min-width: 1200px) {
-   body {
+   /* body {
       background-image: none;
       background: green;
-      font-style: italic;
+   } */
+
+   body {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+   main {
+      padding: 2em;
+   }
+
+   article {
+      margin-bottom: 2.6em;
+   }
+
+   article > p:nth-of-type(1)::after {
+      width: 60px;
+      height: 60px;
+   }
+
+   article h2 {
+      font-weight: bold;
+      margin-bottom: 0.6em;
+   }
+
+   article iframe,
+   article section {
+      width: 49%;
+      display: inline-block;
+      margin: 0;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 20px;
+      height: 250px;
+      vertical-align: middle;
+   }
+
+   header * {
+      display: inline-block;
+   }
+
+   /* header {
+      height: 100px;
+   }
+
+   header div {
+      float: left;
+   }
+
+   header nav {
+      float: right;
+   } */
+
+   header div img,
+   header div p {
+      vertical-align: middle;
+      margin-bottom: 0;
+   }
+
+   header div,
+   header nav {
+      vertical-align: middle;
+   }
+
+   header ul li {
+      padding-bottom: 0;
+      margin-top: 5px;
+   }
+
+   section p {
+      margin-top: 2em;
+      margin-bottom: 2em;
+   }
+
+   section {
+      padding: 1.2em;
+   }
+
+   section form input {
+      width: 75%;
+   }
+
+   aside div {
+      display: inline-block;
+      width: 33%;
+      margin: 0;
+   }
+
+   aside {
+      margin-bottom: 2em;
+   }
+
+   footer {
+      padding-left: 12%;
+      padding-right: 12%;
    }
 }
