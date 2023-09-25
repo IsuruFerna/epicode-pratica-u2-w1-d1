@@ -350,8 +350,8 @@ article > p:nth-of-type(1)::after {
       display: inline-block;
    }
 
-   /* header {
-      height: 100px;
+   header {
+      height: 103px;
    }
 
    header div {
@@ -360,12 +360,20 @@ article > p:nth-of-type(1)::after {
 
    header nav {
       float: right;
-   } */
+   }
 
    header div img,
    header div p {
       vertical-align: middle;
+      /* margin-bottom: 0; */
+   }
+
+   header div img {
       margin-bottom: 0;
+   }
+   header div p {
+      /* margin-bottom: 2em; */
+      margin-bottom: 1em;
    }
 
    header div,
